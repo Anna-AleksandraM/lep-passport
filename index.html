@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Цифровой паспорт роботизированного модуля БАС для очистки проводов ЛЭП">
+  <title>ГУАП-ЛЭП-26-001 — Цифровой паспорт БАС</title>
+  <style>
+    :root { color-scheme: light; --ink:#172536; --muted:#64748b; --line:#dfe5ed; --bg:#f4f7fa; --accent:#1765a7; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; color:var(--ink); background:var(--bg); }
+    main { max-width:940px; margin:0 auto; padding:36px 18px 70px; }
+    header { border-radius:18px; padding:34px 34px 28px; color:#fff; background:#173a59; }
+    .eyebrow { font-size:13px; letter-spacing:.12em; text-transform:uppercase; opacity:.85; }
+    h1 { margin:12px 0 8px; font-size:clamp(26px,4.5vw,39px); line-height:1.15; }
+    header p { margin:0; max-width:650px; color:#dfebf4; }
+    .meta { display:flex; gap:12px; flex-wrap:wrap; margin-top:23px; }
+    .pill { padding:5px 12px; border:1px solid rgba(255,255,255,.30); border-radius:99px; font-size:13px; }
+    section { background:#fff; border:1px solid var(--line); border-radius:15px; padding:25px 28px; margin-top:18px; }
+    h2 { font-size:19px; margin:0 0 16px; }
+    p { margin:7px 0 12px; }
+    dl { display:grid; grid-template-columns:1fr 1.5fr; margin:0; }
+    dt, dd { padding:10px 0; border-top:1px solid var(--line); }
+    dt { color:var(--muted); padding-right:15px; }
+    dd { margin:0; font-weight:500; }
+    .note { padding:13px 16px; background:#f0f6fa; border-left:3px solid #7d9fbb; border-radius:6px; color:#344d63; font-size:14px; }
+    .placeholder { font-style:italic; color:#8a6470; }
+    footer { font-size:13px; text-align:center; color:var(--muted); margin-top:28px; }
+    .docs { display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+    .doc { display:flex; align-items:center; justify-content:space-between; gap:9px; padding:14px 16px; color:var(--accent); font-weight:600; text-decoration:none; border:1px solid var(--line); border-radius:9px; background:#f7fafc; }
+    .doc:hover { background:#eaf3fa; border-color:#aac9e0; }
+    .doc span { color:var(--muted); white-space:nowrap; font-size:12px; }
+    .doc:focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+    @media(max-width:600px) { main {padding:12px 10px 35px;} header,section {padding:22px 19px; border-radius:12px;} dl {grid-template-columns:1fr;} .docs {grid-template-columns:1fr;} dt {border-top:1px solid var(--line);padding-bottom:0;} dd {border:0;padding-top:2px;} }
+    @media print {body {background:#fff;} main {padding:0;} section,header {break-inside:avoid;} header {background:#fff;color:#111;border:2px solid #aaa;} header p{color:#333;} .pill{border-color:#aaa;} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">ГУАП · Цифровой паспорт изделия</div>
+      <h1>Роботизированный БАС для очистки проводов ЛЭП</h1>
+      <p>Прототип на базе SKYRIS Technic 6S с навесным модулем захвата, передвижения и механической очистки провода</p>
+      <div class="meta">
+        <span class="pill">S/N: <strong>ГУАП-ЛЭП-26-001</strong></span>
+        <span class="pill">Версия: <strong>1.0</strong></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>1. Идентификация</h2>
+      <dl>
+        <dt>Серийный номер</dt><dd>ГУАП-ЛЭП-26-001</dd>
+        <dt>Изделие</dt><dd>Роботизированный модуль очистки и передвижения по ЛЭП</dd>
+        <dt>Разработчик</dt><dd>Команда ГУАП</dd>
+        <dt>Версия изделия</dt><dd>1.0</dd>
+        <dt>Дата сборки</dt><dd>12.11.2026</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>2. Основные характеристики</h2>
+      <dl>
+        <dt>Базовая платформа</dt><dd>SKYRIS Technic 6S</dd>
+        <dt>Масса базового квадрокоптера</dt><dd>1125 г</dd>
+        <dt>Максимальная взлётная масса</dt><dd>1800 г</dd>
+        <dt>Материал деталей</dt><dd>PETG, FDM-печать</dd>
+        <dt>Направляющие</dt><dd>2 карбоновые трубки Ø12 мм</dd>
+        <dt>Рабочий орган</dt><dd>4 сменные щётки, винтовое крепление</dd>
+        <dt>Испытательный провод</dt><dd>Трос Ø5 мм в полимерной оболочке</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>3. Электроника и приводы</h2>
+      <dl>
+        <dt>Полётный контроллер</dt><dd>SKYRIS PIX</dd>
+        <dt>Плата расширения</dt><dd>SKYRIS SHIELD</dd>
+        <dt>Бортовой компьютер</dt><dd>Orange Pi 5 Pro</dd>
+        <dt>Радиоуправление</dt><dd>ELRS</dd>
+        <dt>Привод захвата</dt><dd>Сервопривод MG996R</dd>
+        <dt>Привод перемещения</dt><dd>Шаговый двигатель 28BYJ-48</dd>
+        <dt>Драйвер шагового двигателя</dt><dd>ULN2003</dd>
+        <dt>Контроль положения</dt><dd>Концевой выключатель</dd>
+        <dt>Камеры</dt><dd>Штатная и дополнительная веб-камера</dd>
+        <dt>Питание</dt><dd>LiPo 6S, через DC–DC преобразователи для дополнительных приводов</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>4. Программное обеспечение</h2>
+      <dl>
+        <dt>Прошивка полётного контроллера</dt><dd>PX4 1.17.0</dd>
+        <dt>Операционная система Orange Pi</dt><dd>Orange Pi 1.0.6 Focal · Ubuntu 20.04.6 LTS (Focal Fossa)</dd>
+        <dt>Режимы полёта</dt><dd>Stabilized, Attitude, Position, Offboard</dd>
+        <dt>Режимы управления модулем</dt><dd>Ручной, автоматический</dd>
+        <dt>CH5</dt><dd>Arm switch</dd>
+        <dt>CH6</dt><dd>Flight Mode Settings</dd>
+        <dt>CH8</dt><dd>Emergency kill switch</dd>
+        <dt>Failsafe — Low battery</dt><dd>Land mode</dd>
+        <dt>Failsafe — RC Loss</dt><dd>Land mode</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>5. Документация</h2>
+      <nav class="docs" aria-label="Документация изделия">
+        <a class="doc" data-document="report" href="./Техническое_описание_БАС_ЛЭП_редакция_03.pdf">Технический отчёт <span>PDF ↗</span></a>
+        <a class="doc" data-document="structure" href="./Структурная схема.pdf">Структурная схема <span>PDF ↗</span></a>
+        <a class="doc" data-document="wiring" href="./Электромонтажная схема.pdf">Электромонтажная схема <span>PDF ↗</span></a>
+        <a class="doc" data-document="assembly" href="./Маршрут_сборки_роботизированного_модуля_редакция_02.pdf">Инструкция по сборке <span>PDF ↗</span></a>
+      </nav>
+    </section>
+
+    <footer>ГУАП · ГУАП-ЛЭП-26-001</footer>
+  </main>
+
+  <script>
+    // On GitHub Pages, match these four links with files committed to the same repository.
+    // The repository tree is read publicly; the passport itself does not require a backend.
+    (() => {
+      const match = location.hostname.match(/^([a-z\d-]+)\.github\.io$/i);
+      const repo = decodeURIComponent(location.pathname.split('/').filter(Boolean)[0] || '');
+      if (!match || !repo) return;
+      const owner = match[1];
+      const base = `https://github.com/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}`;
+      const links = [...document.querySelectorAll('[data-document]')];
+      links.forEach(a => { a.href = base; }); // Reliable fallback: repository file browser.
+      const normalized = p => p.toLocaleLowerCase('ru').replace(/[ё]/g,'е').replace(/[ _\-()]/g,'');
+      const rules = {
+        report: [/(техническоеописание|техотчет|техническииотчет|technicalreport|bas_c2_documentation|документацияс2)/, /(отчет|описание|documentation)/],
+        structure: [/(структурнаясхема|структурн|structural)/],
+        wiring: [/(электромонтажнаясхема|электромонтаж|wiring)/],
+        assembly: [/(маршрутсборки|инструкцияпосборке|instruktsia|assemblyinstruction)/, /(инструкц|маршрут)/]
+      };
+      const score = (name, key) => {
+        const n = normalized(name);
+        if (!/\.(pdf|docx)$/.test(name.toLowerCase())) return -1;
+        const idx = rules[key].findIndex(r => r.test(n));
+        if (idx < 0) return -1;
+        return 100 - idx * 35 + (/\.pdf$/i.test(name) ? 10 : 0);
+      };
+      fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/git/trees/main?recursive=1`, {headers:{Accept:'application/vnd.github+json'}})
+        .then(r => { if (!r.ok) throw new Error('Cannot read repository tree'); return r.json(); })
+        .then(data => {
+          if (!Array.isArray(data.tree)) return;
+          const files = data.tree.filter(o => o.type === 'blob' && o.path);
+          for (const a of links) {
+            const key = a.dataset.document;
+            const best = files.map(f => ({f, score: score(f.path.split('/').pop(), key)}))
+              .filter(x => x.score >= 0).sort((x, y) => y.score - x.score)[0];
+            if (!best) continue;
+            a.href = best.f.html_url || `${base}/blob/main/${best.f.path.split('/').map(encodeURIComponent).join('/')}`;
+            a.querySelector('span').textContent = /\.pdf$/i.test(best.f.path) ? 'PDF ↗' : 'DOCX ↗';
+          }
+        }).catch(() => {});
+    })();
+  </script>
+</body>
+</html>
